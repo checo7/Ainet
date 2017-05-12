@@ -22,3 +22,7 @@ Route::get('/dash', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/requests', 'RequestController@index')->name('requests');
+
+Route::get('/requests/create', 'RequestController@create')->name('requestsCreate');
